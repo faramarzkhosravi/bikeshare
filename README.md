@@ -22,6 +22,18 @@ The script in `bikeshare.py`:
 - `bikeshare.py` — main application logic
 - `README.md` — project overview and usage instructions
 
+## Data
+
+The project uses public bikeshare trip data for U.S. cities. The original dataset is based on the Udacity Bikeshare project and contains trip records with timestamps and rider information.
+
+This project expects bikeshare CSV files in the project's root directory. These files are intentionally excluded from version control via `.gitignore` and must be added locally before running the analysis.
+
+Example:
+- `./new_york_city.csv`
+
+If these files are missing, the script will not run correctly.
+
+
 ## Requirements
 
 This project uses:
