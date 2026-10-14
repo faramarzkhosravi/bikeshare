@@ -1,3 +1,4 @@
+# Analyze bikeshare trip data to summarize usage patterns by city, month, and weekday.
 import time
 import pandas as pd
 import numpy as np
