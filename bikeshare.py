@@ -10,6 +10,13 @@ CITY_DATA = {
     'washington': 'washington.csv',
 }
 
+
+def _print_elapsed_time(start_time: float) -> None:
+    """Print elapsed time and a separator after a statistics calculation."""
+    print("\nThis took %s seconds." % (time.time() - start_time))
+    print('-'*40)
+
+
 def get_filters() -> Tuple[str, str, str]:
     """
     Asks user to specify a city, month, and day to analyze.
@@ -65,8 +72,7 @@ def time_stats(df: pd.DataFrame) -> None:
     # display the most common start hour
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    _print_elapsed_time(start_time)
 
 
 def station_stats(df: pd.DataFrame) -> None:
@@ -84,8 +90,7 @@ def station_stats(df: pd.DataFrame) -> None:
     # display most frequent combination of start station and end station trip
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    _print_elapsed_time(start_time)
 
 
 def trip_duration_stats(df: pd.DataFrame) -> None:
@@ -100,8 +105,7 @@ def trip_duration_stats(df: pd.DataFrame) -> None:
     # display mean travel time
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    _print_elapsed_time(start_time)
 
 
 def user_stats(df: pd.DataFrame) -> None:
@@ -119,8 +123,7 @@ def user_stats(df: pd.DataFrame) -> None:
     # Display earliest, most recent, and most common year of birth
 
 
-    print("\nThis took %s seconds." % (time.time() - start_time))
-    print('-'*40)
+    _print_elapsed_time(start_time)
 
 
 def main() -> None:
